@@ -135,6 +135,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('Welcome to the application!');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipies);
@@ -143,7 +147,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome!');
+  newFeature();
 };
 init();
 
@@ -179,3 +183,15 @@ init();
 // 8) Use command to track all files 'git add -A'
 // 9) Now all the files in side bar showing the 'A' symbol means added and M meaning modified in VS code
 // 10) you can check which files are modified or untracked using 'git status'
+//11) To get back to previous version command is 'git reset --hard HEAD'
+
+//12) To see the previous commits use 'git log' and to go out of this git log command 'q'
+
+//13) To go at specific commit, we will first copy the id given when we run command git log and then use command 'git reset --hard 74f075a1749b7e951656cd0c3cc0adfce7c942ca(sample id)'
+
+//14) Command to see all branches available is "git branch"
+
+// 15) Create new branch 'git branch [branchName]'
+// 16) Switch to another branch 'git checkout branchName'
+
+// 17)
