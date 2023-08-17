@@ -194,4 +194,8 @@ init();
 // 15) Create new branch 'git branch [branchName]'
 // 16) Switch to another branch 'git checkout branchName'
 
-// 17)
+// 17) Procedure to add git repo to github : -
+// a) create repo in github and give it a name
+// b) And do not add the readme file from github otherwise it will show error
+// c) then 'git remote add origin https://github.com/RiteshDholkhediya/forkify-app.git' you will get this command from github after creating repo manually in github
+// d) then you can push your local code to that repo using command "git push origin branchName"
