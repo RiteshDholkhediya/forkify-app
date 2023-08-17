@@ -2,7 +2,7 @@ import View from './View.js';
 // import icons from '../img/icons.svg' ; // In Parcel 1 this was the way to import icons, videos etc.
 import icons from 'url:../../img/icons.svg'; // this is the way to import images, videos or static file in parcel 2
 
-import { Fraction } from 'fractional';
+import fracty from 'fracty';
 // console.log(Fraction);
 
 class RecipeView extends View {
@@ -132,7 +132,7 @@ class RecipeView extends View {
             <use href="${icons}#icon-check"></use>
           </svg>
           <div class="recipe__quantity">${
-            ing.quantity ? new Fraction(ing.quantity).toString() : ''
+            ing.quantity ? fracty(ing.quantity).toString() : ''
           }</div>
           <div class="recipe__description">
             <span class="recipe__unit">${ing.unit}</span>
